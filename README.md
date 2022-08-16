@@ -10,19 +10,17 @@ Our task is to create a game for user to develop their skills at typing while be
 
 ## Table of Contents 
 
-- [Visuals](#visuals)
-- [Installation](#installation)
+- [Visuals](#visuals
 - [Usage](#usage)
 - [Credits](#credits)
 
 ## Visuals
 ![Educated Scripts image](./assets/images/educated-scripts.png)
-## Installation
-This application will require installing React by using the command npx create-react-app . in your terminal. or GitBash. 
+
 ## Usage
-AS AN employer looking for candidates with experience building single-page applications
-I WANT to view a potential employee's deployed React portfolio of work samples
-SO THAT I can assess whether they're a good candidate for an open position
+AS A user looking for to enhance their typing skills
+I WANT to create an application that allows user to type while having their time calcuated.
+SO THAT I can track the users performance based on speed and levels completed.
 
 ## Credits
 List your collaborators, I was fortunate enough to get additional assistance from class mates either during office hours or during private study group sessions after class. I truly appreciate any help that I have received throughout this project.
