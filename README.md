@@ -10,7 +10,7 @@ Our task is to create a game for user to develop their skills at typing while be
 
 ## Table of Contents 
 
-- [Visuals](#visuals
+- [Visuals](#visuals)
 - [Usage](#usage)
 - [Credits](#credits)
 
