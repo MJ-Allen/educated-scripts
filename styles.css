@@ -16,7 +16,7 @@ body, .quote-input {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .container {
-    background-color: rgb(32, 218, 88);
+   background-image: linear-gradient(rgba(0, 255, 98, 0.74),yellow,green);
     padding:1rem;
     border-radius: .5rem;
     border-style: solid;
@@ -36,7 +36,13 @@ h1 {
    
     
 }
-
+.score {
+   position:absolute;
+    bottom:2rem;
+    font-size: 4rem;
+    color:goldenrod;
+    font-weight: bolder;
+}
 .timer {
     position: absolute;
     top: 2rem;
@@ -79,5 +85,15 @@ h1 {
 .incorrect {
     color: red;
     text-decoration: underline;
+
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    margin: auto;
+    height: 20px;
+    text-align: center;
+
 
 }
