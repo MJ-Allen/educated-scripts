@@ -46,8 +46,16 @@ async function renderNewQuote() {
     quoteInputElement.value = null
     startTimer()
 }
-
+    let startTime
     function startTimer() {
        timerElement.innerText = 0 
+       startTime = new Date()
+       setInterval(() => {
+        getTimerTime()
+       }, 1000)
     }
-getNextQuote()
+// set interval doesn't always come back accurate reason for inputting startTime function
+    function getTimerTime() {
+        return Math.floor((new Date() - startTime) /1000)
+    }
+renderNewQuote()
