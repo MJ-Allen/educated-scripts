@@ -1,7 +1,11 @@
 const RANDOM_QUOTE_API_URL ='http://api.quotable.io/random'
 const quoteDisplayElement = document.getElementById("quoteDisplay")
 const quoteInputElement = document.getElementById("quoteInput")
-const timerElement = doc
+const timerElement = document.getElementById('timer')
+
+
+// random quote api
+
 
 quoteInputElement.addEventListener('input', () => {
 const arrayQuote = quoteDisplayElement.querySelectorAll('span')
@@ -36,10 +40,9 @@ function getRandomQuote() {
 // input loop in order to type through each charater based on correct/incorrect input
 async function renderNewQuote() {
     const quote = await getRandomQuote()
-    quoteDisplayElement.innerText = quote
+    quoteDisplayElement.innerHTML = ''
     quote.split('').forEach(character => {
         const characterSpan = document.createElement('span')
-        // characterSpan.classList.add('correct')
         characterSpan.innerText= character
         quoteDisplayElement.appendChild(characterSpan)
     })
@@ -51,7 +54,7 @@ async function renderNewQuote() {
        timerElement.innerText = 0 
        startTime = new Date()
        setInterval(() => {
-        getTimerTime()
+        timer.innerText = getTimerTime()
        }, 1000)
     }
 // set interval doesn't always come back accurate reason for inputting startTime function
